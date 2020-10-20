@@ -1,9 +1,4 @@
+
 @import '_mixins.scss';
 @import '_variables.scss';
 
-nav ul {
-  display: flex;
-}
-nav > ul > li:nth-child(1) {
-  background-color: aqua;
-}
