@@ -1,2 +1,38 @@
 @import '_mixins.scss';
 @import '_variables.scss';
+
+.destinations {
+  padding: 80px 0;
+
+  &__list {
+    display: flex;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 266px;
+
+      &__img {
+        fill: #555;
+      }
+
+      &__title {
+        font-family: $raleway;
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #555555;
+      }
+
+      &__text {
+        font-family: $montserrat;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #8c8c8c;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,4 +1,130 @@
-
 @import '_mixins.scss';
 @import '_variables.scss';
 
+.header {
+  background-color: #d1d1d1;
+  background-image: url(../img/header__bg.jpg);
+  padding: 40px 0;
+
+  &__navigation {
+    color: #fff;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    &__logo__img {
+      fill: #fff;
+    }
+
+    &__logo__img:hover {
+      fill: #1c1c1c;
+    }
+  
+    &__logo__link {
+      display: flex;
+    }
+  
+    &__logo__text {
+      font-family: $raleway;
+      font-size: 34px;
+      line-height: 1.2;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: -0.04em;
+      color: #fff;
+      align-self: center;
+    }
+  
+    &__list__link {
+      font-family: $montserrat;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    }
+
+    &__list__search {
+      fill: #fff;
+    }
+
+    &__list__basket {
+      fill: #fff;
+    }
+
+    &__list__item {
+      align-self: center;
+    }
+
+  }
+
+  &__slider {
+    color: #fff;
+    position: relative;
+    width: 589px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &__title {
+      font-family: $raleway;
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: 500;
+      font-style: normal; 
+      text-align: center;
+      
+      &-bold {
+        font-family: $raleway;
+        font-size: 52px;
+        font-weight: 800;
+        
+      }
+    }
+    &__btn-left{
+      position: absolute;
+      left: -100px;
+      background-color: transparent;
+      border: 0;
+    }
+    &__btn-right{
+      position: absolute;
+      right: -100px;
+      background-color: transparent;
+      border: 0;
+    }
+
+    &__btn-left svg {
+      fill: #A2A19F;
+    }
+    &__btn-right svg {
+      fill: #A2A19F;
+    }
+
+    &__text{
+      text-align: center;
+      font-family: $montserrat;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+      font-style: normal;
+    }
+    
+    &__btn {
+      text-transform: uppercase;
+      background-color:#998675;
+      border: 0;
+      border-radius: 4px;
+      font-family: $raleway;
+      font-size: 14px;
+      line-height: 23px;
+      font-weight: 800;
+      font-style: normal;
+      color: #fff;
+      padding: 15px 39px ;
+    }
+  }
+}

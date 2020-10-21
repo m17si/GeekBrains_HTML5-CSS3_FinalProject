@@ -136,4 +136,309 @@ table {
   width: 1170px;
   margin: 0 auto;
 }
+
+.header {
+  background-color: #d1d1d1;
+  background-image: url(../img/header__bg.jpg);
+  padding: 40px 0;
+}
+
+.header__navigation {
+  color: #fff;
+}
+
+.header__navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__navigation__logo__img {
+  fill: #fff;
+}
+
+.header__navigation__logo__img:hover {
+  fill: #1c1c1c;
+}
+
+.header__navigation__logo__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__navigation__logo__text {
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.04em;
+  color: #fff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header__navigation__list__link {
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+}
+
+.header__navigation__list__search {
+  fill: #fff;
+}
+
+.header__navigation__list__basket {
+  fill: #fff;
+}
+
+.header__navigation__list__item {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.header__slider {
+  color: #fff;
+  position: relative;
+  width: 589px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__slider__title {
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+.header__slider__title-bold {
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+}
+
+.header__slider__btn-left {
+  position: absolute;
+  left: -100px;
+  background-color: transparent;
+  border: 0;
+}
+
+.header__slider__btn-right {
+  position: absolute;
+  right: -100px;
+  background-color: transparent;
+  border: 0;
+}
+
+.header__slider__btn-left svg {
+  fill: #A2A19F;
+}
+
+.header__slider__btn-right svg {
+  fill: #A2A19F;
+}
+
+.header__slider__text {
+  text-align: center;
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.header__slider__btn {
+  text-transform: uppercase;
+  background-color: #998675;
+  border: 0;
+  border-radius: 4px;
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  font-style: normal;
+  color: #fff;
+  padding: 15px 39px;
+}
+
+.destinations {
+  padding: 80px 0;
+}
+
+.destinations__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.destinations__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 266px;
+}
+
+.destinations__list__item__img {
+  fill: #555;
+}
+
+.destinations__list__item__title {
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+
+.destinations__list__item__text {
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #8c8c8c;
+  text-align: center;
+}
+
+.realization {
+  padding: 83px 0 0;
+  background-color: #fbfaf8;
+}
+
+.realization__title {
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  text-align: center;
+}
+
+.realization__text {
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+  text-align: center;
+  width: 775px;
+  margin: 0 auto;
+}
+
+.realization__content {
+  position: relative;
+  height: 482px;
+}
+
+.realization__content__img-left {
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+  z-index: 1;
+}
+
+.realization__content__img-midle {
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+  z-index: 2;
+}
+
+.realization__content__img-right {
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  z-index: 1;
+}
+
+.multipurpose {
+  padding: 48px 0;
+  background: -webkit-gradient(linear, left top, right top, from(#211B19), to(#4D3326));
+  background: linear-gradient(to right, #211B19, #4D3326);
+}
+
+.multipurpose__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.multipurpose__content__title {
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #fff;
+}
+
+.multipurpose__content__title-bronze {
+  color: #c7b299;
+}
+
+.multipurpose__content__text {
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #615855;
+  font-style: normal;
+}
+
+.multipurpose__content__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  font-style: normal;
+  border-radius: 3px;
+  padding: 16px 28px;
+  background-color: #998675;
+}
+
+.projects {
+  padding: 80px 0;
+}
+
+.indicators {
+  background: -webkit-gradient(linear, left top, right top, from(#211B19), to(#4D3326));
+  background: linear-gradient(to right, #211B19, #4D3326);
+}
+
+.partners {
+  background-color: #d1d1d1;
+  background-image: url(../img/partners__bg.jpg);
+}
 /*# sourceMappingURL=style.css.map */

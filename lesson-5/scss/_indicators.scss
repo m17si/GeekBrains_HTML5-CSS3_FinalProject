@@ -1,2 +1,6 @@
 @import '_mixins.scss';
 @import '_variables.scss';
+
+.indicators {
+  background: linear-gradient(to right,#211B19,#4D3326);
+}
