@@ -4,14 +4,25 @@
 .header {
   background-color: #d1d1d1;
   background-image: url(../img/header__bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 40px 0;
 
   &__navigation {
     color: #fff;
+    margin-bottom: 300px;
 
     &__list {
       display: flex;
-      justify-content: space-between;
+
+      & li:nth-child(10) {
+        margin-left: 63px;
+      }
+
+      & li:nth-child(1) {
+        margin: 0 180px 0 0;
+      }
+      
     }
   
     &__logo__img {
@@ -48,14 +59,17 @@
 
     &__list__search {
       fill: #fff;
+      cursor: pointer;
     }
 
     &__list__basket {
       fill: #fff;
+      cursor: pointer;
     }
 
     &__list__item {
       align-self: center;
+      margin-left: 29px;
     }
 
   }
@@ -76,6 +90,7 @@
       font-weight: 500;
       font-style: normal; 
       text-align: center;
+      margin-bottom: 19px;
       
       &-bold {
         font-family: $raleway;
@@ -86,22 +101,26 @@
     }
     &__btn-left{
       position: absolute;
-      left: -100px;
+      left: -300px;
       background-color: transparent;
       border: 0;
+      top: 95px;
     }
     &__btn-right{
       position: absolute;
-      right: -100px;
+      right: -300px;
       background-color: transparent;
       border: 0;
+      top: 95px;
     }
 
     &__btn-left svg {
       fill: #A2A19F;
+      cursor: pointer;
     }
     &__btn-right svg {
       fill: #A2A19F;
+      cursor: pointer;
     }
 
     &__text{
@@ -111,6 +130,7 @@
       line-height: 24px;
       font-weight: 300;
       font-style: normal;
+      margin-bottom: 52px;
     }
     
     &__btn {
@@ -125,6 +145,12 @@
       font-style: normal;
       color: #fff;
       padding: 15px 39px ;
+      margin-bottom: 329px;
+      cursor: pointer;
+    }
+
+    &__radio input {
+      cursor: pointer;
     }
   }
 }

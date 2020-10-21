@@ -140,20 +140,28 @@ table {
 .header {
   background-color: #d1d1d1;
   background-image: url(../img/header__bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 40px 0;
 }
 
 .header__navigation {
   color: #fff;
+  margin-bottom: 300px;
 }
 
 .header__navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.header__navigation__list li:nth-child(10) {
+  margin-left: 63px;
+}
+
+.header__navigation__list li:nth-child(1) {
+  margin: 0 180px 0 0;
 }
 
 .header__navigation__logo__img {
@@ -194,16 +202,19 @@ table {
 
 .header__navigation__list__search {
   fill: #fff;
+  cursor: pointer;
 }
 
 .header__navigation__list__basket {
   fill: #fff;
+  cursor: pointer;
 }
 
 .header__navigation__list__item {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-left: 29px;
 }
 
 .header__slider {
@@ -230,6 +241,7 @@ table {
   font-weight: 500;
   font-style: normal;
   text-align: center;
+  margin-bottom: 19px;
 }
 
 .header__slider__title-bold {
@@ -240,24 +252,28 @@ table {
 
 .header__slider__btn-left {
   position: absolute;
-  left: -100px;
+  left: -300px;
   background-color: transparent;
   border: 0;
+  top: 95px;
 }
 
 .header__slider__btn-right {
   position: absolute;
-  right: -100px;
+  right: -300px;
   background-color: transparent;
   border: 0;
+  top: 95px;
 }
 
 .header__slider__btn-left svg {
   fill: #A2A19F;
+  cursor: pointer;
 }
 
 .header__slider__btn-right svg {
   fill: #A2A19F;
+  cursor: pointer;
 }
 
 .header__slider__text {
@@ -267,6 +283,7 @@ table {
   line-height: 24px;
   font-weight: 300;
   font-style: normal;
+  margin-bottom: 52px;
 }
 
 .header__slider__btn {
@@ -281,6 +298,12 @@ table {
   font-style: normal;
   color: #fff;
   padding: 15px 39px;
+  margin-bottom: 329px;
+  cursor: pointer;
+}
+
+.header__slider__radio input {
+  cursor: pointer;
 }
 
 .destinations {
@@ -291,6 +314,18 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.destinations__list li:nth-child(2) > svg {
+  padding-top: 9px;
+}
+
+.destinations__list li:nth-child(3) > svg {
+  padding-top: 7px;
+}
+
+.destinations__list li:nth-child(4) > svg {
+  padding-top: 14px;
 }
 
 .destinations__list__item {
@@ -307,6 +342,15 @@ table {
   width: 266px;
 }
 
+.destinations__list__item:after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #f1eee9;
+  margin: 0 auto;
+}
+
 .destinations__list__item__img {
   fill: #555;
 }
@@ -317,6 +361,7 @@ table {
   line-height: 1.2;
   font-weight: 600;
   color: #555555;
+  margin: 29px 0 19px;
 }
 
 .destinations__list__item__text {
@@ -326,6 +371,7 @@ table {
   font-weight: 300;
   color: #8c8c8c;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .realization {
@@ -340,6 +386,7 @@ table {
   font-weight: 600;
   color: #555555;
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .realization__text {
@@ -350,7 +397,7 @@ table {
   color: #8c8c8c;
   text-align: center;
   width: 775px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 .realization__content {
@@ -440,6 +487,7 @@ table {
   color: #555555;
   text-align: center;
   font-style: normal;
+  margin-bottom: 24px;
 }
 
 .projects__text {
@@ -452,6 +500,7 @@ table {
   text-align: center;
   width: 795px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .projects__list-nav {
@@ -461,6 +510,47 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 40px;
+}
+
+.projects__nav__item {
+  margin-left: 10px;
+}
+
+.projects__nav li:nth-child(1) {
+  margin-left: 0;
+}
+
+.projects__nav li:nth-child(1) button {
+  padding: 5px 19px 5px 19px;
+}
+
+.projects__nav li:nth-child(2) button {
+  padding: 5px 19px 5px 19px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  color: #8c8c8c;
+}
+
+.projects__nav li:nth-child(3) button {
+  padding: 5px 19px 5px 19px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  color: #8c8c8c;
+}
+
+.projects__nav li:nth-child(4) button {
+  padding: 5px 19px 5px 19px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  color: #8c8c8c;
+}
+
+.projects__nav li:nth-child(5) button {
+  padding: 5px 19px 5px 19px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  color: #8c8c8c;
 }
 
 .projects__nav__btn {
@@ -473,12 +563,23 @@ table {
   line-height: 21px;
   font-weight: 300;
   font-style: normal;
-  padding: 5px 0;
+  cursor: pointer;
 }
 
 .projects__card__item {
   position: relative;
   background-color: #fbfaf8;
+  margin: 0 0 30px 30px;
+}
+
+.projects__card__item:before {
+  content: "";
+  display: block;
+  border: 22px solid transparent;
+  border-bottom: 16px solid #fbfaf8;
+  position: absolute;
+  top: 199px;
+  left: 16px;
 }
 
 .projects__card {
@@ -489,10 +590,167 @@ table {
       flex-wrap: wrap;
 }
 
-.projects__card__item__img-svg {
+.projects__card li:nth-child(1) {
+  margin-left: 0;
+}
+
+.projects__card li:nth-child(4) {
+  margin-left: 0;
+}
+
+.projects__card__title {
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #c7b299;
+  font-style: normal;
+  margin: 30px 0 14px 28px;
+}
+
+.projects__card__text {
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #d1d1d1;
+  margin: 0 0 27px 28px;
+}
+
+.projects__card__item__img-svg-link {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 106px;
+  left: 145px;
+  fill: #fff;
+}
+
+.projects__card__item__img-svg-search {
+  position: absolute;
+  top: 106px;
+  right: 145px;
+  fill: #fff;
+}
+
+.projects__btn {
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0;
+  background-color: #998675;
+  border-radius: 3px;
+  padding: 14px 44px;
+  margin: 10px auto 0;
+  display: block;
+  cursor: pointer;
+}
+
+.presentation {
+  background-color: #d1d1d1;
+  background-image: url(../img/presentation__bg.jpg);
+  padding: 210px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.presentation__img {
+  fill: #fff;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  border: 0;
+  margin: 0 auto 44px;
+  display: block;
+  cursor: pointer;
+}
+
+.presentation__title {
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.presentation__text {
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #ffffff;
+  font-style: normal;
+  text-align: center;
+  width: 570px;
+  margin: 0 auto 40px;
+}
+
+.presentation__time {
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #c7b299;
+  font-style: normal;
+  text-align: center;
+}
+
+.mobile {
+  background-color: #fbfaf8;
+  padding-top: 79px;
+}
+
+.mobile__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile__img {
+  margin: 0 29px 0 47px;
+}
+
+.mobile__content__title {
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  font-style: normal;
+  margin: 116px 0 40px;
+}
+
+.mobile__content__text {
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+  font-style: normal;
+  margin-bottom: 45px;
+}
+
+.mobile__content__list__item {
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #8c8c8c;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile__content__list__item svg {
+  margin: 0 25px 0 50px;
+  fill: #c7b299;
 }
 
 .indicators {

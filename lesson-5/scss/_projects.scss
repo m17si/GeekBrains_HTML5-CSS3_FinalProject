@@ -12,6 +12,7 @@
   color: #555555;
   text-align: center;
   font-style: normal;
+  margin-bottom: 24px;
   }
 
   &__text {
@@ -24,11 +25,54 @@
     text-align: center;
     width: 795px;
     margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   &__list-nav {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  &__nav__item {
+    margin-left: 10px;
+  }
+
+  &__nav li:nth-child(1) {
+    margin-left: 0;
+  }
+
+  &__nav li:nth-child(1)  button {
+  padding: 5px 19px 5px 19px;
+  
+  }
+
+  &__nav li:nth-child(2)  button {
+    padding: 5px 19px 5px 19px;
+    background-color: #fff ;
+    border: 1px solid #ebebeb;
+    color: #8c8c8c;
+  }
+
+  &__nav li:nth-child(3)  button {
+    padding: 5px 19px 5px 19px;
+    background-color: #fff ;
+    border: 1px solid #ebebeb;
+    color: #8c8c8c;
+  }
+
+  &__nav li:nth-child(4)  button {
+    padding: 5px 19px 5px 19px;
+    background-color: #fff ;
+    border: 1px solid #ebebeb;
+    color: #8c8c8c;
+  }
+
+  &__nav li:nth-child(5)  button {
+    padding: 5px 19px 5px 19px;
+    background-color: #fff ;
+    border: 1px solid #ebebeb;
+    color: #8c8c8c;
   }
 
   &__nav__btn {
@@ -41,23 +85,87 @@
     line-height: 21px;
     font-weight: 300;
     font-style: normal;
-    padding: 5px 0;
+    cursor: pointer;
   }
 
   &__card__item {
     position: relative;
     background-color: #fbfaf8;
+    margin: 0 0 30px 30px;
+
+    &:before {
+      content: "";
+      display: block;
+      border: 22px solid transparent;
+      border-bottom: 16px solid #fbfaf8;
+      position: absolute;
+      top: 199px;
+      left: 16px;
+    }
   }
 
   &__card {
     display: flex;
     flex-wrap: wrap;
+
+    & li:nth-child(1) {
+      margin-left: 0;
+    }
+
+    & li:nth-child(4) {
+      margin-left: 0;
+    }
+
+    &__title {
+      font-family: $raleway;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 500;
+      color: #c7b299;
+      font-style: normal;
+      margin :30px 0 14px 28px;
+      
+    }
+
+    &__text {
+      font-family: $montserrat;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #d1d1d1;
+      margin:0 0 27px 28px;
+      
+    }
   }
 
-  &__card__item__img-svg {
+  &__card__item__img-svg-link {
     position: absolute;
-    top: 0;
-    left: 0; 
+    top: 106px;
+    left: 145px;
+    fill: #fff;
+  }
+
+  &__card__item__img-svg-search {
+    position: absolute;
+    top: 106px;
+    right: 145px; 
+    fill: #fff;
+  }
+
+  &__btn {
+    font-family: $raleway;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 0;
+    background-color: #998675;
+    border-radius: 3px;
+    padding: 14px 44px;
+    margin: 10px auto 0;
+    display: block;
+    cursor: pointer;
   }
   
 }

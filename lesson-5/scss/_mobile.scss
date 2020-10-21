@@ -1,2 +1,57 @@
 @import '_mixins.scss';
 @import '_variables.scss';
+
+.mobile {
+  background-color: #fbfaf8;
+  padding-top: 79px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__img {
+    margin: 0 29px 0 47px;
+  }
+
+  &__content {
+
+    &__title {
+      font-family: $raleway;
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: 600;
+      color: #555555;
+      font-style: normal;
+      margin: 116px 0 40px;
+    }
+
+    &__text {
+      font-family: $montserrat;
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 300;
+      color: #8c8c8c;
+      font-style: normal;
+      margin-bottom: 45px;
+    }
+
+    &__list__item {
+      font-family: $montserrat;
+      font-size: 16px;
+      line-height: 32px;
+      font-weight: 300;
+      color: #8c8c8c;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+
+      & svg {
+        margin: 0 25px 0 50px;
+        fill: #c7b299;
+      }
+
+    }
+  
+  }
+  
+}
