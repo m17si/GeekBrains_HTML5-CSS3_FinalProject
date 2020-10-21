@@ -43,5 +43,21 @@
     font-style: normal;
     padding: 5px 0;
   }
+
+  &__card__item {
+    position: relative;
+    background-color: #fbfaf8;
+  }
+
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__card__item__img-svg {
+    position: absolute;
+    top: 0;
+    left: 0; 
+  }
   
 }

@@ -476,6 +476,25 @@ table {
   padding: 5px 0;
 }
 
+.projects__card__item {
+  position: relative;
+  background-color: #fbfaf8;
+}
+
+.projects__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects__card__item__img-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .indicators {
   background: -webkit-gradient(linear, left top, right top, from(#211B19), to(#4D3326));
   background: linear-gradient(to right, #211B19, #4D3326);
