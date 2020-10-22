@@ -106,6 +106,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  outline: none;
+}
+
 blockquote, q {
   quotes: none;
 }
@@ -161,21 +165,57 @@ table {
 }
 
 .header__navigation__list li:nth-child(1) {
-  margin: 0 180px 0 0;
+  margin: 0 150px 0 0;
+}
+
+.header__navigation__list__btn {
+  background-color: transparent;
+  border: 0;
+}
+
+.header__navigation__list__btn:hover svg {
+  fill: #c7b299;
+}
+
+.header__navigation__list__btn:active svg {
+  fill: #645d5d;
+  outline: none;
+}
+
+.header__navigation__list__btn:focus svg {
+  outline: 3px solid #000;
 }
 
 .header__navigation__logo__img {
   fill: #fff;
 }
 
-.header__navigation__logo__img:hover {
-  fill: #1c1c1c;
-}
-
 .header__navigation__logo__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.header__navigation__logo__link:hover .header__navigation__logo__text {
+  color: #c7b299;
+}
+
+.header__navigation__logo__link:hover .header__navigation__logo__img {
+  fill: #c7b299;
+}
+
+.header__navigation__logo__link:active .header__navigation__logo__text {
+  color: #3d3d3d;
+  outline: none;
+}
+
+.header__navigation__logo__link:active .header__navigation__logo__img {
+  fill: #3d3d3d;
+  outline: none;
+}
+
+.header__navigation__logo__link:focus {
+  outline: 2px solid #000;
 }
 
 .header__navigation__logo__text {
@@ -198,6 +238,19 @@ table {
   font-weight: 300;
   font-style: normal;
   color: #fff;
+}
+
+.header__navigation__list__link:hover {
+  color: #c7b299;
+}
+
+.header__navigation__list__link:active {
+  opacity: 0.7;
+  outline: none;
+}
+
+.header__navigation__list__link:focus {
+  outline: 2px  solid #000;
 }
 
 .header__navigation__list__search {
@@ -258,12 +311,36 @@ table {
   top: 95px;
 }
 
+.header__slider__btn-left:hover svg {
+  fill: #d3c1ad;
+}
+
+.header__slider__btn-left:active svg {
+  fill: #645d5d;
+}
+
+.header__slider__btn-left:focus svg {
+  outline: 2px solid #000;
+}
+
 .header__slider__btn-right {
   position: absolute;
   right: -300px;
   background-color: transparent;
   border: 0;
   top: 95px;
+}
+
+.header__slider__btn-right:hover svg {
+  fill: #d3c1ad;
+}
+
+.header__slider__btn-right:active svg {
+  fill: #645d5d;
+}
+
+.header__slider__btn-right:focus svg {
+  outline: 2px solid #000;
 }
 
 .header__slider__btn-left svg {
@@ -300,6 +377,20 @@ table {
   padding: 15px 39px;
   margin-bottom: 329px;
   cursor: pointer;
+}
+
+.header__slider__btn:hover {
+  -webkit-box-shadow: inset 2px 2px 15px 3px #fff;
+          box-shadow: inset 2px 2px 15px 3px #fff;
+}
+
+.header__slider__btn:active {
+  -webkit-box-shadow: inset 2px 2px 15px 3px #644d1e;
+          box-shadow: inset 2px 2px 15px 3px #644d1e;
+}
+
+.header__slider__btn:focus {
+  outline: 3px solid white;
 }
 
 .header__slider__radio input {
@@ -353,6 +444,7 @@ table {
 
 .destinations__list__item__img {
   fill: #555;
+  margin-bottom: 29px;
 }
 
 .destinations__list__item__title {
@@ -361,7 +453,7 @@ table {
   line-height: 1.2;
   font-weight: 600;
   color: #555555;
-  margin: 29px 0 19px;
+  margin-bottom: 19px;
 }
 
 .destinations__list__item__text {
@@ -372,6 +464,18 @@ table {
   color: #8c8c8c;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.destinations__list__item:hover .destinations__list__item__img {
+  fill: #c7b299;
+}
+
+.destinations__list__item:hover .destinations__list__item__title {
+  color: #c7b299;
+}
+
+.destinations__list__item:hover::after {
+  background-color: #c7b299;
 }
 
 .realization {

@@ -20,7 +20,27 @@
       }
 
       & li:nth-child(1) {
-        margin: 0 180px 0 0;
+        margin: 0 150px 0 0;
+      }
+
+      &__btn {
+        background-color: transparent;
+        border: 0;
+
+        &:hover svg {
+          fill: #c7b299;
+        }
+
+        &:active svg {
+          fill: #645d5d;
+          outline: none;
+        }
+
+        &:focus svg {
+          outline: 3px solid #000;
+        }
+
+
       }
       
     }
@@ -29,12 +49,30 @@
       fill: #fff;
     }
 
-    &__logo__img:hover {
-      fill: #1c1c1c;
-    }
-  
     &__logo__link {
       display: flex;
+
+      &:hover .header__navigation__logo__text {
+        color: #c7b299;
+      }
+
+      &:hover  .header__navigation__logo__img {
+        fill: #c7b299;
+      }
+
+      &:active .header__navigation__logo__text {
+        color: #3d3d3d;
+        outline: none;
+      }
+
+      &:active  .header__navigation__logo__img {
+        fill:#3d3d3d;
+        outline: none;
+      }
+
+      &:focus {
+        outline: 2px solid #000;
+      }
     }
   
     &__logo__text {
@@ -46,6 +84,8 @@
       letter-spacing: -0.04em;
       color: #fff;
       align-self: center;
+
+      
     }
   
     &__list__link {
@@ -55,6 +95,19 @@
     font-weight: 300;
     font-style: normal;
     color: #fff;
+
+      &:hover {
+        color: #c7b299;
+      }
+
+      &:active {
+        opacity: 0.7;
+        outline: none;
+      }
+
+      &:focus {
+        outline: 2px  solid #000;
+      }
     }
 
     &__list__search {
@@ -105,6 +158,19 @@
       background-color: transparent;
       border: 0;
       top: 95px;
+
+      &:hover svg {
+        fill: #d3c1ad;
+      }
+
+      &:active svg {
+        fill: #645d5d;
+      }
+
+      &:focus svg {
+        outline: 2px solid #000;
+      }
+
     }
     &__btn-right{
       position: absolute;
@@ -112,6 +178,19 @@
       background-color: transparent;
       border: 0;
       top: 95px;
+
+      &:hover svg {
+        fill: #d3c1ad;
+      }
+
+      &:active svg {
+        fill: #645d5d;
+      }
+
+      &:focus svg {
+        outline: 2px solid #000;
+      }
+
     }
 
     &__btn-left svg {
@@ -147,6 +226,19 @@
       padding: 15px 39px ;
       margin-bottom: 329px;
       cursor: pointer;
+
+      &:hover {
+        box-shadow: inset 2px 2px 15px 3px #fff;
+      }
+
+      &:active {
+        box-shadow: inset 2px 2px 15px 3px #644d1e;
+      }
+
+      &:focus {
+        outline: 3px solid rgb(255, 255, 255);
+      }
+
     }
 
     &__radio input {
