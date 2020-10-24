@@ -6,6 +6,8 @@
 
   &__list {
     display: flex;
+    justify-content: space-between;
+    
     & li:nth-child(2) > svg {
       padding-top: 9px;
     }
