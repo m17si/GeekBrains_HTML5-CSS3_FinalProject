@@ -36,6 +36,10 @@
       border: 1px solid #f8f8f8;
       position: relative;
       padding-bottom: 33px ;
+
+      &:hover {
+        background-color: #362f2d;
+      }
     }
 
     &__img {
@@ -133,6 +137,11 @@
 
   &__btn-img {
     fill: #d1d1d1;
+
+    &:hover,
+    &:focus {
+      fill: #c7b299;
+    }
   }
 
   

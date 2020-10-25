@@ -45,6 +45,15 @@
       border-radius: 3px;
       padding: 16px 28px;
       background-color: #998675;
+
+      &:hover,
+      &:focus {
+        box-shadow: inset 2px 2px 15px 3px #fff;
+      }
+
+      &:active {
+        box-shadow: inset 2px 2px 15px 3px #644d1e;
+      }
     }
   }
 

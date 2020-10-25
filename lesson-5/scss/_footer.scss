@@ -18,6 +18,17 @@
       font-weight: 300;
       color: #555555;
       font-style: normal;
+
+      &:hover,
+      &:focus {
+        color: #fff;
+      }
+
+      &:hover .footer__main__recent__date,
+      &:focus .footer__main__recent__date {
+        color: #fff;
+      }
+      
     }
 
     &__waxom {
@@ -39,6 +50,10 @@
         line-height: 20px;
         font-weight: 400;
         color: #d1d1d1;
+
+        &:hover {
+          color: #c7b299;
+        }
       }
   
       &-img {
@@ -132,6 +147,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        & li:hover,
+        & li:focus {
+          outline-style: dotted;
+        }
 
         &-mrg {
           margin-bottom: 6px;

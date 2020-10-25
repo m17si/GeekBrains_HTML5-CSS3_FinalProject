@@ -27,17 +27,14 @@
         background-color: transparent;
         border: 0;
 
-        &:hover svg {
+        &:hover svg,
+        &:focus svg {
           fill: #c7b299;
         }
 
         &:active svg {
           fill: #645d5d;
           outline: none;
-        }
-
-        &:focus svg {
-          outline: 3px solid #000;
         }
 
 
@@ -52,11 +49,13 @@
     &__logo__link {
       display: flex;
 
-      &:hover .header__navigation__logo__text {
+      &:hover .header__navigation__logo__text,
+      &:focus .header__navigation__logo__text {
         color: #c7b299;
       }
 
-      &:hover  .header__navigation__logo__img {
+      &:hover  .header__navigation__logo__img,
+      &:focus  .header__navigation__logo__img {
         fill: #c7b299;
       }
 
@@ -70,9 +69,6 @@
         outline: none;
       }
 
-      &:focus {
-        outline: 2px solid #000;
-      }
     }
   
     &__logo__text {
@@ -96,7 +92,8 @@
     font-style: normal;
     color: #fff;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: #c7b299;
       }
 
@@ -105,9 +102,6 @@
         outline: none;
       }
 
-      &:focus {
-        outline: 2px  solid #000;
-      }
     }
 
     &__list__search {
@@ -159,16 +153,13 @@
       border: 0;
       top: 95px;
 
-      &:hover svg {
+      &:hover svg,
+      &:focus svg{
         fill: #d3c1ad;
       }
 
       &:active svg {
         fill: #645d5d;
-      }
-
-      &:focus svg {
-        outline: 2px solid #000;
       }
 
     }
@@ -179,16 +170,13 @@
       border: 0;
       top: 95px;
 
-      &:hover svg {
+      &:hover svg,
+      &:focus svg {
         fill: #d3c1ad;
       }
 
       &:active svg {
         fill: #645d5d;
-      }
-
-      &:focus svg {
-        outline: 2px solid #000;
       }
 
     }
@@ -227,7 +215,8 @@
       margin-bottom: 329px;
       cursor: pointer;
 
-      &:hover {
+      &:hover,
+      &:focus {
         box-shadow: inset 2px 2px 15px 3px #fff;
       }
 
@@ -235,9 +224,6 @@
         box-shadow: inset 2px 2px 15px 3px #644d1e;
       }
 
-      &:focus {
-        outline: 3px solid rgb(255, 255, 255);
-      }
 
     }
 

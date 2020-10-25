@@ -43,55 +43,67 @@
   }
 
   &__nav li:nth-child(1)  button {
-  padding: 5px 19px 5px 19px;
-  
+  padding: 5px 19px 5px 19px;  
   }
 
   &__nav li:nth-child(2)  button {
     padding: 5px 19px 5px 19px;
-    background-color: #fff ;
-    border: 1px solid #ebebeb;
-    color: #8c8c8c;
+
   }
 
   &__nav li:nth-child(3)  button {
     padding: 5px 19px 5px 19px;
-    background-color: #fff ;
-    border: 1px solid #ebebeb;
-    color: #8c8c8c;
   }
 
   &__nav li:nth-child(4)  button {
     padding: 5px 19px 5px 19px;
-    background-color: #fff ;
-    border: 1px solid #ebebeb;
-    color: #8c8c8c;
   }
 
   &__nav li:nth-child(5)  button {
     padding: 5px 19px 5px 19px;
-    background-color: #fff ;
-    border: 1px solid #ebebeb;
-    color: #8c8c8c;
   }
 
   &__nav__btn {
-    color: #fff;
-    background-color: #998675;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    color: #8c8c8c;
     border-radius: 3px;
-    border: 0;
+    border: 1px solid #ebebeb;
     font-family: $montserrat;
     font-size: 14px;
     line-height: 21px;
     font-weight: 300;
     font-style: normal;
     cursor: pointer;
+
+    &:focus {
+        background-color: #998675;
+        color: #fff ;
+        border: 1px solid  #998675;
+    }
   }
 
   &__card__item {
     position: relative;
     background-color: #fbfaf8;
     margin: 0 0 30px 30px;
+
+    & a {
+      display: none;
+    }
+
+    &:hover a {
+      display: block;
+    }
+    
+    &:hover {
+      background-color: #362f2d;
+    }
+
+    &:hover::before {
+      border: 22px solid transparent;
+      border-bottom: 16px solid #362f2d;
+    }
 
     &:before {
       content: "";
@@ -166,6 +178,15 @@
     margin: 10px auto 0;
     display: block;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 2px 2px 15px 3px #fff;
+    }
+
+    &:active {
+      box-shadow: inset 2px 2px 15px 3px #644d1e;
+    }
   }
   
 }

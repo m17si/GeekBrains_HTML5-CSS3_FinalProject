@@ -50,6 +50,11 @@
         fill: #c7b299;
       }
 
+      &:hover svg{
+        transform: rotate(360deg);
+        transition: .3s ease-out;
+      }
+
     }
   
   }
