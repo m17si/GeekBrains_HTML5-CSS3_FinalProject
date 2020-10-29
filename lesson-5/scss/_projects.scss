@@ -98,6 +98,14 @@
     
     &:hover {
       background-color: #362f2d;
+
+      & .projects__card__title {
+        color: #fff;
+      }
+
+      & .projects__card__text {
+        color: #c7b299;
+      }
     }
 
     &:hover::before {
@@ -119,6 +127,10 @@
   &__card {
     display: flex;
     flex-wrap: wrap;
+
+    &__link-hover:hover svg {
+      fill: #c7b299;
+    }
 
     & li:nth-child(1) {
       margin-left: 0;

@@ -160,6 +160,10 @@ table {
   display: flex;
 }
 
+.header__navigation__list li:nth-child(12) {
+  display: none;
+}
+
 .header__navigation__list li:nth-child(10) {
   margin-left: 63px;
 }
@@ -376,6 +380,52 @@ table {
 
 .header__slider__radio input {
   cursor: pointer;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line {
+  fill: none;
+  -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham6 .top {
+  stroke-dasharray: 40 172;
+}
+
+.ham6 .middle {
+  stroke-dasharray: 40 111;
+}
+
+.ham6 .bottom {
+  stroke-dasharray: 40 172;
+}
+
+.ham6.active .top {
+  stroke-dashoffset: -132px;
+}
+
+.ham6.active .middle {
+  stroke-dashoffset: -71px;
+}
+
+.ham6.active .bottom {
+  stroke-dashoffset: -132px;
 }
 
 .destinations {
@@ -689,6 +739,14 @@ table {
   background-color: #362f2d;
 }
 
+.projects__card__item:hover .projects__card__title {
+  color: #fff;
+}
+
+.projects__card__item:hover .projects__card__text {
+  color: #c7b299;
+}
+
 .projects__card__item:hover::before {
   border: 22px solid transparent;
   border-bottom: 16px solid #362f2d;
@@ -710,6 +768,10 @@ table {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.projects__card__link-hover:hover svg {
+  fill: #c7b299;
 }
 
 .projects__card li:nth-child(1) {
@@ -1007,6 +1069,22 @@ table {
   background-color: #362f2d;
 }
 
+.posts__list__item:hover .posts__card__title, .posts__list__item:hover .posts__card__text {
+  color: #c7b299;
+}
+
+.posts__list__item:hover .posts__card__text {
+  color: #fff;
+}
+
+.posts__list__item:hover .posts__card__mounth {
+  background-color: #c7b299;
+}
+
+.posts__list__item:hover .posts__card__day {
+  background-color: #a48d72;
+}
+
 .posts__list__img {
   margin-bottom: 30px;
 }
@@ -1158,12 +1236,17 @@ table {
 }
 
 .footer__main__link:hover, .footer__main__link:focus {
-  color: #fff;
+  color: #c7b299;
 }
 
 .footer__main__link:hover .footer__main__recent__date,
 .footer__main__link:focus .footer__main__recent__date {
   color: #fff;
+}
+
+.footer__main__link:hover .footer__main__recent__text,
+.footer__main__link:focus .footer__main__recent__text {
+  color: #c7b299;
 }
 
 .footer__main__waxom__text {

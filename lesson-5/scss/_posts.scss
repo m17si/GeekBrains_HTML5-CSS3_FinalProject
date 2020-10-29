@@ -39,6 +39,22 @@
 
       &:hover {
         background-color: #362f2d;
+
+        & .posts__card__title, .posts__card__text {
+          color: #c7b299;
+        }
+
+        & .posts__card__text {
+          color: #fff;
+        }
+
+        & .posts__card__mounth {
+          background-color: #c7b299;
+        }
+
+        & .posts__card__day {
+          background-color: #a48d72;
+        }
       }
     }
 

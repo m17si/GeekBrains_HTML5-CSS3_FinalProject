@@ -21,12 +21,17 @@
 
       &:hover,
       &:focus {
-        color: #fff;
+        color: #c7b299;
       }
 
       &:hover .footer__main__recent__date,
       &:focus .footer__main__recent__date {
         color: #fff;
+      }
+
+      &:hover .footer__main__recent__text,
+      &:focus .footer__main__recent__text {
+        color: #c7b299;
       }
       
     }
