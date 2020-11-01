@@ -70,6 +70,11 @@
 
   .presentation {
     padding: 210px 0 0;
+    overflow: hidden;
+
+    &__bg {
+      width: auto;
+    }
   }
 
   .posts {
@@ -100,6 +105,10 @@
     &__content__title {
       margin: 0 0 40px;
       text-align: center;
+    }
+
+    &__content__list__item svg {
+      margin: 0px 10px 0px 0px;
     }
   }
 
