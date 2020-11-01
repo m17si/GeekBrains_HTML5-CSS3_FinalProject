@@ -22,6 +22,11 @@
     margin: 0 auto 44px;
     display: block;
     cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2) rotate(360deg);
+      transition: 1s;
+    }
   }
 
   &__title {

@@ -15,6 +15,10 @@
     &__list {
       display: flex;
 
+      &__item:hover {
+        animation: root 0.5s ease-in-out infinite;
+      }
+
       & li:nth-child(12) {
         display: none;
       }
@@ -272,4 +276,26 @@
 }
 .ham6.active .bottom {
   stroke-dashoffset: -132px;
+}
+
+@keyframes root{
+  from {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg) scale(1.1);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
 }

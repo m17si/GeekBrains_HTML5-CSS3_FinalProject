@@ -160,6 +160,11 @@ table {
   display: flex;
 }
 
+.header__navigation__list__item:hover {
+  -webkit-animation: root 0.5s ease-in-out infinite;
+          animation: root 0.5s ease-in-out infinite;
+}
+
 .header__navigation__list li:nth-child(12) {
   display: none;
 }
@@ -426,6 +431,52 @@ table {
 
 .ham6.active .bottom {
   stroke-dashoffset: -132px;
+}
+
+@-webkit-keyframes root {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(5deg) scale(1.1);
+            transform: rotate(5deg) scale(1.1);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg) scale(1.1);
+            transform: rotate(-5deg) scale(1.1);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes root {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(5deg) scale(1.1);
+            transform: rotate(5deg) scale(1.1);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg) scale(1.1);
+            transform: rotate(-5deg) scale(1.1);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 .destinations {
@@ -865,6 +916,13 @@ table {
   cursor: pointer;
 }
 
+.presentation__img:hover {
+  -webkit-transform: scale(1.2) rotate(360deg);
+          transform: scale(1.2) rotate(360deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .presentation__title {
   font-family: "raleway", Arial, sans-serif;
   font-size: 30px;
@@ -1209,6 +1267,10 @@ table {
 
 .partners__list__item:hover, .partners__list__item:focus {
   background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .footer {
