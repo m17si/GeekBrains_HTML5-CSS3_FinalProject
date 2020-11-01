@@ -1,0 +1,77 @@
+@import '_mixins.scss';
+@import '_variables.scss';
+
+.destinations {
+  padding: 80px 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    
+    & li:nth-child(2) > svg {
+      padding-top: 9px;
+    }
+
+    & li:nth-child(3) > svg {
+      padding-top: 7px;
+    }
+
+    & li:nth-child(4) > svg {
+      padding-top: 14px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 266px;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+        background-color: #f1eee9;
+        margin: 0 auto;
+      }
+
+      &__img {
+        fill: #555;
+        margin-bottom: 29px;
+      }
+
+      &__title {
+        font-family: $raleway;
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 600;
+        color: #555555;
+        margin-bottom:19px;
+      }
+
+      &__text {
+        font-family: $montserrat;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #8c8c8c;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      &:hover &__img {
+        fill: #c7b299;
+      }
+
+      &:hover &__title {
+        color: #c7b299;
+      }
+
+      &:hover::after {
+        background-color:#c7b299;
+      }
+
+    
+    }
+  }
+}

@@ -1,0 +1,164 @@
+@import '_mixins.scss';
+@import '_variables.scss';
+
+.posts {
+  padding: 82px 0 80px;
+
+  &__title {
+    font-family: $raleway;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-family: $montserrat;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+    text-align: center;
+    width: 780px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    &__item {
+      width: 370px;
+      border: 1px solid #f8f8f8;
+      position: relative;
+      padding-bottom: 33px ;
+
+      &:hover {
+        background-color: #362f2d;
+
+        & .posts__card__title, .posts__card__text {
+          color: #c7b299;
+        }
+
+        & .posts__card__text {
+          color: #fff;
+        }
+
+        & .posts__card__mounth {
+          background-color: #c7b299;
+        }
+
+        & .posts__card__day {
+          background-color: #a48d72;
+        }
+      }
+    }
+
+    &__img {
+      margin-bottom: 30px;
+    }
+
+    &__link {
+      font-family: $montserrat;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #c7b299;
+      margin-left: 29px;
+    }
+
+    &__img-svg {
+      fill: #c7b299;
+      margin-left: 5px;
+    }
+
+  }
+
+  &__card__day {
+    font-family: $montserrat;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #363636;
+    border-radius: 3px 3px 0px 0px;
+    padding: 8px 0 7px;;
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  &__card__mounth {
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 50px;
+    background-color: #252525;
+    border-radius: 0px 0px 3px 3px;
+    text-align: center;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    padding: 3px 0;
+  }
+
+  &__card__radio {
+    position: absolute;
+    top: 180px;
+    left: 130px;
+  }
+
+  &__card__title {
+    font-family: $raleway;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 19px;
+    margin-left: 29px;
+  }
+
+  &__card__text {
+    font-family: $montserrat;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #8c8c8c;
+    margin-bottom: 27px;
+    margin-left: 29px;
+    width: 310px;
+  }
+
+  &__btn-wrp {
+    width: 52px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn-arrow {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  &__btn-img {
+    fill: #d1d1d1;
+
+    &:hover,
+    &:focus {
+      fill: #c7b299;
+    }
+  }
+
+  
+}

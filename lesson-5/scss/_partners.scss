@@ -1,0 +1,24 @@
+@import '_mixins.scss';
+@import '_variables.scss';
+
+.partners {
+  background-color: #d1d1d1;
+  background-image: url(../img/partners__bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0;
+  
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__item:hover,
+    &__item:focus {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: scale(1.2);
+      transition: 1s;
+    }
+
+  }
+}

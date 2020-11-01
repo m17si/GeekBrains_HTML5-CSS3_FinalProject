@@ -1,0 +1,204 @@
+@import '_mixins.scss';
+@import '_variables.scss';
+
+.projects {
+  padding: 80px 0;
+
+  &__title {
+  font-family: $raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  text-align: center;
+  font-style: normal;
+  margin-bottom: 24px;
+  }
+
+  &__text {
+    font-family: $montserrat;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+    font-style: normal;
+    text-align: center;
+    width: 795px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  &__list-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  &__nav__item {
+    margin-left: 10px;
+  }
+
+  &__nav li:nth-child(1) {
+    margin-left: 0;
+  }
+
+  &__nav li:nth-child(1)  button {
+  padding: 5px 19px 5px 19px;  
+  }
+
+  &__nav li:nth-child(2)  button {
+    padding: 5px 19px 5px 19px;
+
+  }
+
+  &__nav li:nth-child(3)  button {
+    padding: 5px 19px 5px 19px;
+  }
+
+  &__nav li:nth-child(4)  button {
+    padding: 5px 19px 5px 19px;
+  }
+
+  &__nav li:nth-child(5)  button {
+    padding: 5px 19px 5px 19px;
+  }
+
+  &__nav__btn {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    color: #8c8c8c;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    font-family: $montserrat;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+
+    &:focus {
+        background-color: #998675;
+        color: #fff ;
+        border: 1px solid  #998675;
+    }
+  }
+
+  &__card__item {
+    position: relative;
+    background-color: #fbfaf8;
+    margin: 0 0 30px 30px;
+
+    & a {
+      display: none;
+    }
+
+    &:hover a {
+      display: block;
+    }
+    
+    &:hover {
+      background-color: #362f2d;
+
+      & .projects__card__title {
+        color: #fff;
+      }
+
+      & .projects__card__text {
+        color: #c7b299;
+      }
+    }
+
+    &:hover::before {
+      border: 22px solid transparent;
+      border-bottom: 16px solid #362f2d;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      border: 22px solid transparent;
+      border-bottom: 16px solid #fbfaf8;
+      position: absolute;
+      top: 200px;
+      left: 16px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__link-hover:hover svg {
+      fill: #c7b299;
+    }
+
+    & li:nth-child(1) {
+      margin-left: 0;
+    }
+
+    & li:nth-child(4) {
+      margin-left: 0;
+    }
+
+    &__title {
+      font-family: $raleway;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 500;
+      color: #c7b299;
+      font-style: normal;
+      margin :30px 0 14px 28px;
+      
+    }
+
+    &__text {
+      font-family: $montserrat;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+      color: #d1d1d1;
+      margin:0 0 27px 28px;
+      
+    }
+  }
+
+  &__card__item__img-svg-link {
+    position: absolute;
+    top: 106px;
+    left: 145px;
+    fill: #fff;
+  }
+
+  &__card__item__img-svg-search {
+    position: absolute;
+    top: 106px;
+    right: 145px; 
+    fill: #fff;
+  }
+
+  &__btn {
+    font-family: $raleway;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 0;
+    background-color: #998675;
+    border-radius: 3px;
+    padding: 14px 44px;
+    margin: 10px auto 0;
+    display: block;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 2px 2px 15px 3px #fff;
+    }
+
+    &:active {
+      box-shadow: inset 2px 2px 15px 3px #644d1e;
+    }
+  }
+  
+}
